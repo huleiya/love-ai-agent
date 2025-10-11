@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: love-image-search-mcp-server
+  profiles:
+    active: sse, secret
+server:
+  port: 8127
+pexels-api:
+  url: https://api.pexels.com/v1/search
