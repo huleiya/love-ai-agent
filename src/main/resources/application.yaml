@@ -2,7 +2,27 @@ spring:
   application:
     name: love-ai-agent
   profiles:
-    active: local
+    active: prod
+  ai:
+    dashscope: # 引入的哪种系列大模型
+      chat:
+        options:
+          model: qwen-plus
+
+    vectorstore:
+      pgvector:
+        dimensions: 1536
+        index-type: hnsw
+        distance-type: cosine_distance
+        max-document-batch-size: 10000
+#    mcp:
+#      client:
+#        #        sse:
+#        #          connections:
+#        #            server1:
+#        #              url: http://localhost:8127
+#        stdio:
+#          servers-configuration: classpath:mcp-servers.json
 server:
   port: 8123
   servlet:

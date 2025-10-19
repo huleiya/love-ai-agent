@@ -26,7 +26,7 @@ public class ToolRegistration {
         return ToolCallbacks.from(
                 fileOperationTool,
                 webSearchTool,
-                webScrapingTool,
+//                webScrapingTool,
                 resourceDownloadTool,
                 terminalOperationTool,
                 pdfGenerationTool,

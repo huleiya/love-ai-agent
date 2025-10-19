@@ -24,7 +24,7 @@ public class WukongManus extends ToolCallAgent {
                 If not, continue next step.
                 """;
         this.setNextStepPrompt(NEXT_STEP_PROMPT);
-        this.setMaxSteps(20);
+        this.setMaxSteps(5);
         // 初始化客户端
         ChatClient chatClient = ChatClient.builder(dashScopeChatModel)
                 .defaultAdvisors(new MyLoggerAdvisor())

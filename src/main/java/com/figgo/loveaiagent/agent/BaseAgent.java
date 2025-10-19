@@ -1,8 +1,6 @@
 package com.figgo.loveaiagent.agent;
 
 import cn.hutool.core.util.StrUtil;
-import com.alibaba.nacos.shaded.io.grpc.netty.shaded.io.netty.util.concurrent.CompleteFuture;
-import com.esotericsoftware.minlog.Log;
 import com.figgo.loveaiagent.agent.model.AgentState;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
